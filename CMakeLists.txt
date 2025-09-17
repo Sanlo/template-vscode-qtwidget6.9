@@ -24,17 +24,17 @@ target_link_libraries(widget_template
         Qt::Widgets
 )
 
-include(GNUInstallDirs)
+# include(GNUInstallDirs)
 
-install(TARGETS widget_template
-    BUNDLE  DESTINATION .
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-)
+# install(TARGETS widget_template
+#     BUNDLE  DESTINATION .
+#     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+#     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+# )
 
-qt_generate_deploy_app_script(
-    TARGET widget_template
-    OUTPUT_SCRIPT deploy_script
-    NO_UNSUPPORTED_PLATFORM_ERROR
-)
-install(SCRIPT ${deploy_script})
+# qt_generate_deploy_app_script(
+#     TARGET widget_template
+#     OUTPUT_SCRIPT deploy_script
+#     NO_UNSUPPORTED_PLATFORM_ERROR
+# )
+# install(SCRIPT ${deploy_script})
